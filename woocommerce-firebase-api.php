@@ -36,10 +36,10 @@ if ( ! function_exists( 'firebase_woocommerce_order_details_store' ) ) {
         }
 
         // Your Firebase Realtime Database URL
-        $databaseURL = 'https://woopurchased-default-rtdb.firebaseio.com';
+        $databaseURL = 'https://your-project.firebaseio.com';
 
         // Your Firebase Realtime Database secret key
-        $apiKey = 'FjVYWM8AWLIQ0Ye5YrcuDRcMffIxYzGX1WQXi5pv';
+        $apiKey = 'database_secret_key';
 
         // Set the default timezone
         date_default_timezone_set('Asia/Kolkata');
@@ -94,7 +94,7 @@ if ( ! function_exists( 'firebase_woocommerce_order_details_store' ) ) {
 function compile_daily_sales_summary() {
 
     // Firebase project URL
-    $firebase_url = 'https://woopurchased-default-rtdb.firebaseio.com/';
+    $firebase_url = 'firebase_project_url';
 
     // Firebase database path
     $firebase_path = '/purchases.json';
